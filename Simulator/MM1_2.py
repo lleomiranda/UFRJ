@@ -48,11 +48,11 @@ for i in range(0, 2000):
         print(Action)
 
         if TimeNewTransactionG == Action:
-            NumSysTransaction = NumSysTransaction + 1 #incrise the number of transaction on system
+            NumSysTransaction = NumSysTransaction + 1 #add the number of transaction on system
             SimulationTime = SimulationTime + TimeNewTransactionG #update the simulation time
 
         if TimeNaturalRecovery == Action:
-            NumSysTransaction = NumSysTransaction - 1 #decrise the number of transaction on system
+            NumSysTransaction = NumSysTransaction - 1 #delete 1 transaction on system
             SimulationTime = SimulationTime + TimeNaturalRecovery  #update the simulation time
 
         print('Número de transações no sistema:', NumSysTransaction)
